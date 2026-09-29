@@ -1,1 +1,81 @@
-{"version":4,"canonicalRepo":"Flofactionllc/claw-orchestrator","canonicalPolicy":"research/intelligence/GLOBAL_AGENT_POLICY.md","canonicalDeploymentStandard":"operations/DEPLOYMENT_STANDARD.md","canonicalValueOptimizationPolicy":"operations/VALUE_OPTIMIZATION_POLICY.md","canonicalOrcaStandard":"operations/ORCA_ADE_STANDARD.md","orca":{"enabled":true,"role":"preferred-terminal-agent-control-plane","businessAgentMode":"existing-runtime-with-orca-engineering-handoff","defaultPermissions":"manual","requiredSkills":["orca-cli","orchestration","computer-use"],"companySkill":"flo-faction-control-plane","companySkillSource":"skills/flo-faction-control-plane/SKILL.md","defaultFanoutAgents":["claude","codex","opencode"],"secretsInControlPlane":false},"syncMode":"pointer-and-runtime-bootstrap","updated":"2026-09-16","rules":{"preserveSecrets":true,"liveDeploymentVerificationRequired":true,"consequentialActionsRequireHumanApproval":true,"orcaPreferredForTerminalAgents":true,"orcaDoesNotReplaceBusinessAgentRuntime":true,"orcaManualPermissionsDefault":true},"repository":"Flofactionllc/gemini-cli","class":"cli"}
+{
+  "version": 6,
+  "canonicalRepo": "Flofactionllc/claw-orchestrator",
+  "canonicalPolicy": "research/intelligence/GLOBAL_AGENT_POLICY.md",
+  "canonicalDeploymentStandard": "operations/DEPLOYMENT_STANDARD.md",
+  "canonicalValueOptimizationPolicy": "operations/VALUE_OPTIMIZATION_POLICY.md",
+  "canonicalOrcaStandard": "operations/ORCA_ADE_STANDARD.md",
+  "orca": {
+    "enabled": true,
+    "role": "preferred-terminal-agent-control-plane",
+    "businessAgentMode": "existing-runtime-with-orca-engineering-handoff",
+    "defaultPermissions": "manual",
+    "requiredSkills": [
+      "orca-cli",
+      "orchestration",
+      "computer-use"
+    ],
+    "companySkill": "flo-faction-control-plane",
+    "companySkillSource": "skills/flo-faction-control-plane/SKILL.md",
+    "defaultFanoutAgents": [
+      "claude",
+      "codex",
+      "opencode"
+    ],
+    "secretsInControlPlane": false
+  },
+  "syncMode": "pointer-and-runtime-bootstrap",
+  "updated": "2026-09-17",
+  "rules": {
+    "preserveSecrets": true,
+    "liveDeploymentVerificationRequired": true,
+    "consequentialActionsRequireHumanApproval": true,
+    "orcaPreferredForTerminalAgents": true,
+    "orcaDoesNotReplaceBusinessAgentRuntime": true,
+    "orcaManualPermissionsDefault": true,
+    "lastKnownGoodFallback": true,
+    "universalDeploymentLifecycleRequired": true,
+    "freeFirstResearch": true,
+    "maximizeRiskAdjustedValue": true,
+    "protectLocalCompute": true,
+    "agentReachFreeFirstInternetCapability": true,
+    "agentReachDoesNotExpandWriteAuthority": true,
+    "voiceCallsProviderNeutral": true,
+    "voiceCallsDryRunDefault": true,
+    "voiceCallsPstnDefaultDisabled": true,
+    "voiceCallsDoesNotExpandAuthority": true
+  },
+  "repository": "Flofactionllc/gemini-cli",
+  "class": "cli",
+  "canonicalVehicleAcquisitionPolicy": "automotive/VEHICLE_ACQUISITION_POLICY.md",
+  "canonicalAgentReachStandard": "operations/AGENT_REACH_STANDARD.md",
+  "canonicalVoiceCallsStandard": "operations/VOICE_CALLS_STANDARD.md",
+  "agentReach": {
+    "enabled": true,
+    "role": "public-internet-capability-layer",
+    "upstream": "Panniantong/Agent-Reach",
+    "pin": "a19a171fa980a0785849596492e0af4db800c82f",
+    "defaultChannels": "all",
+    "readDefault": true,
+    "writeAuthorityExpanded": false,
+    "secretsInControlPlane": false
+  },
+  "voiceCalls": {
+    "enabled": true,
+    "role": "provider-neutral-authorized-voice-capability",
+    "gatewayPath": "voice_gateway",
+    "defaultMode": "dryrun",
+    "pstnDefaultEnabled": false,
+    "providers": [
+      "livekit",
+      "pipecat",
+      "bolna",
+      "dryrun"
+    ],
+    "freeFirstInference": true,
+    "normalizedOutcome": "CallOutcome",
+    "approvalGatesPreserved": true,
+    "writeAuthorityExpanded": false,
+    "secretsInControlPlane": false
+  }
+}
